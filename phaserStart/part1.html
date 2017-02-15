@@ -91,7 +91,7 @@ function update() {
 	if(cursors.up.isUp){
 		jumpReleased = 1;
 	}
-	if(hitPlatform){
+	if(hitPlatform && player.body.touching.down){
 		extraJump = 1;
 	}
 }
